@@ -1,11 +1,11 @@
 <template>
     <div>
         <tr @click="updateDescriptionState">
-            <td className="fish-name">{{fishData.name}}</td>
+            <td class="fish-name">{{fishData.name}}</td>
             <td>
                 <img :src="fishData.image"/>
             </td>
-            <td className="fish-description" v-if="showDescription">{{fishData.description}}</td>
+            <td class="fish-description" v-if="showDescription">{{fishData.description}}</td>
         </tr>
     </div>
 </template>
