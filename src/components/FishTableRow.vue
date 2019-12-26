@@ -1,9 +1,9 @@
 <template>
     <div>
         <tr>
-            <td className="fish-name">Nemo</td>
+            <td className="fish-name">{{fish.name}}</td>
             <td>
-                <img src="http://tinyurl.com/h8o5szh"/>
+                <img :src="fish.image"/>
             </td>
             {this.state.showDescription ?
             <td className="fish-description">Does anyone know where my dad is?</td>
@@ -14,7 +14,8 @@
 
 <script>
     export default {
-        name: "FishTableRow"
+        name: "FishTableRow",
+        props: ['fish']
     }
 </script>
 

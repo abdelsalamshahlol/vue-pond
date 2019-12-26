@@ -5,7 +5,7 @@
 </template>
 
 <script>
-    import FishTableRow from './components/FishTableRow.vue';
+    import FishTableRow from './FishTableRow.vue';
 
     export default {
         name: "FishTable",
