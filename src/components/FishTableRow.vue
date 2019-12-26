@@ -1,13 +1,11 @@
 <template>
     <div>
-        <tr>
-            <td className="fish-name">{{fish.name}}</td>
+        <tr @click="updateDescriptionState">
+            <td className="fish-name">{{fishData.name}}</td>
             <td>
-                <img :src="fish.image"/>
+                <img :src="fishData.image"/>
             </td>
-            {this.state.showDescription ?
-            <td className="fish-description">Does anyone know where my dad is?</td>
-            : null}
+            <td className="fish-description" v-if="showDescription">{{fishData.description}}</td>
         </tr>
     </div>
 </template>
@@ -15,7 +13,18 @@
 <script>
     export default {
         name: "FishTableRow",
-        props: ['fish']
+        props: ['fish'],
+        data() {
+            return {
+                fishData: this.fish,
+                showDescription: false
+            }
+        },
+        methods: {
+            updateDescriptionState() {
+                this.showDescription = !this.showDescription;
+            }
+        }
     }
 </script>
 
