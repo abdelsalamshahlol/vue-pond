@@ -1,12 +1,12 @@
 <template>
     <div>
-        <tr @click="updateDescriptionState">
-            <td class="fish-name">{{fishData.name}}</td>
-            <td>
+        <div @click="updateDescriptionState">
+            <div class="fish-name">{{fishData.name}}</div>
+            <div>
                 <img :src="fishData.image"/>
-            </td>
-            <td class="fish-description" v-if="showDescription">{{fishData.description}}</td>
-        </tr>
+            </div>
+            <span class="fish-description" v-if="showDescription">{{fishData.description}}</span>
+        </div>
     </div>
 </template>
 

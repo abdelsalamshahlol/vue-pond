@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="wrapper">
         <FishTableRow v-for="(fish, index) in fishes" :fish="fish" :key="index"/>
     </div>
 </template>
@@ -17,5 +17,10 @@
 </script>
 
 <style scoped>
-
+    #wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 </style>
