@@ -38,11 +38,16 @@
 
 <style>
     #app {
-        font-family: 'Avenir', Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-align: center;
-        color: #2c3e50;
         margin-top: 60px;
+        background: #0073aa;
+        padding: 5rem;
+        color: #fefeff;
+        font-size: 25px;
+        font-family: monospace;
+        border: 2px solid #bdbdbd;
+        box-shadow: 1px 1px 7px 2px #928b8b;
     }
 </style>
