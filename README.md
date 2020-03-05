@@ -1,24 +1,15 @@
 # vue-pond
+Solution for one of RBK (HackReactor) weekly assesments problems using Vue.js
+
+## Deployment 
+https://abdelsalamshahlol.github.io/vue-pond/
 
 ## Project setup
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Project development
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
