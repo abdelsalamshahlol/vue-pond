@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="fish">
         <div @click="updateDescriptionState">
             <div class="fish-name">{{fishData.name}}</div>
             <div>
@@ -29,5 +29,18 @@
 </script>
 
 <style scoped>
+    #fish:hover {
+        animation: float 0.9s forwards ease-in-out ;
+    }
 
+    @keyframes float {
+        0% {
+            opacity: 0.5;
+            transform: scale(1);
+        }
+        100%{
+            opacity: 1;
+            transform: scale(1.1);
+        }
+    }
 </style>
